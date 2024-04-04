@@ -1,5 +1,5 @@
 {% set name = "pygmtools" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygmtools-{{ version }}.tar.gz
-  sha256: 95fb02258713887b550fb0f30de6cab78cdc165eda6381ae029838450c5de388
+  sha256: dcb7db2ce3a9bfa87087431702647b2e4d29bccd70465aaf9edeafd9b7dad892
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
