@@ -20,6 +20,7 @@ requirements:
     - python {{ python_min }}
     - wheel
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - requests >=2.25.1
