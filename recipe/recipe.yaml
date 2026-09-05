@@ -41,7 +41,9 @@ tests:
       imports:
         - pygmtools
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version: 
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: pygmtools provides graph matching solvers in Python API and supports numpy and pytorch backends. pygmtools also provides dataset API for standard graph matching benchmarks.
